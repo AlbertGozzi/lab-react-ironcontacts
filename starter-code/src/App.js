@@ -30,13 +30,7 @@ class App extends Component {
     let displayedCardsCopy = [...this.state.displayedCards]
 
     // Sort by name
-    displayedCardsCopy.sort((a, b) => {
-      switch (true) {
-        case (a.name < b.name): return -1;
-        case (a.name > b.name): return 1;
-        default: return 0;
-      }
-    }); 
+    displayedCardsCopy.sort((a, b) => a.name.localeCompare(b.name)); 
 
     // Update state
     this.setState({
