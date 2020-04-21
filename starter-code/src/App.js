@@ -13,7 +13,12 @@ class App extends Component {
 
     // Add random
     let randomIndex = Math.floor(Math.random() * contacts.length);
-    displayedCardsCopy.push(contacts[randomIndex]);
+
+    if (displayedCardsCopy.includes(contacts[randomIndex])) {
+      this.addRandomContact();
+    } else {
+      displayedCardsCopy.push(contacts[randomIndex]);
+    }
 
     // Update state
     this.setState({
