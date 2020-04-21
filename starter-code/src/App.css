@@ -9,17 +9,40 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  /* height: 20px;
+  padding: 20px; */
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+  padding: 10px 0px;
 }
 
 .App-intro {
   font-size: large;
+}
+
+button {
+  margin: 0px 5px;
+}
+
+table {
+  width: 100%;
+}
+
+tr:first-of-type {
+  padding: 10px 0px;
+}
+
+table tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+img {
+  width: 40px;
 }
 
 @keyframes App-logo-spin {
